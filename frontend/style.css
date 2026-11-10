@@ -544,9 +544,6 @@ animation-duration: 0.01ms !important;
 scroll-behavior: auto !important;
 }
 }
-/* =================================
-   PREMIUM PROJECTS SECTION
-================================= */
 
 #projects {
     position: relative;
@@ -949,7 +946,6 @@ scroll-behavior: auto !important;
     transform: translate(3px, -3px);
 }
 
-/* Tablet */
 @media (max-width: 850px) {
     .projects-grid {
         gap: 18px;
@@ -968,7 +964,6 @@ scroll-behavior: auto !important;
     }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     .projects-grid {
         grid-template-columns: 1fr;
@@ -1013,23 +1008,17 @@ scroll-behavior: auto !important;
         animation: none;
     }
 }
-/* =====================================
-   PREMIUM ANIMATIONS
-===================================== */
 
-/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
 }
 
-/* Better text rendering */
 body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
-/* Animated neon background */
 body::before {
     content: "";
     position: fixed;
@@ -1074,7 +1063,7 @@ body::after {
     }
 }
 
-/* Scroll reveal animation */
+
 .reveal {
     opacity: 0;
     transform: translateY(35px);
@@ -1088,12 +1077,12 @@ body::after {
     transform: translateY(0);
 }
 
-/* Staggered project cards */
+
 .project-card.reveal:nth-child(2) {
     transition-delay: 0.15s;
 }
 
-/* Premium hover for buttons */
+
 .primary-button,
 .view-project,
 .project-arrow {
@@ -1116,7 +1105,7 @@ body::after {
     transform: scale(0.97);
 }
 
-/* Premium heading entrance */
+
 #projects > h2,
 #projects .section-description {
     animation: headingEnter 0.9s ease both;
@@ -1134,13 +1123,13 @@ body::after {
     }
 }
 
-/* Text selection color */
+
 ::selection {
     background: rgba(139, 92, 246, 0.45);
     color: #ffffff;
 }
 
-/* Accessible focus for keyboard users */
+
 a:focus-visible,
 button:focus-visible {
     outline: 2px solid #22d3ee;
@@ -1148,7 +1137,7 @@ button:focus-visible {
     border-radius: 6px;
 }
 
-/* Respect reduced motion preferences */
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
@@ -1167,9 +1156,7 @@ button:focus-visible {
         transform: none;
     }
 }
-/* =================================
-   PREMIUM SKILLS CARDS
-================================= */
+
 
 .premium-skills-grid {
     display: grid;
@@ -1328,14 +1315,14 @@ button:focus-visible {
     box-shadow: 0 0 12px #a855f7;
 }
 
-/* Tablet */
+
 @media (max-width: 900px) {
     .premium-skills-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-/* Mobile */
+
 @media (max-width: 550px) {
     .premium-skills-grid {
         grid-template-columns: 1fr;
@@ -1351,16 +1338,14 @@ button:focus-visible {
     }
 }
 
-/* Accessibility */
+
 @media (prefers-reduced-motion: reduce) {
     .premium-skill-card,
     .skill-icon {
         transition: none;
     }
 }
-/* ==================================
-   PREMIUM CONTACT SECTION
-================================== */
+
 
 .contact-container {
     display: grid;
@@ -1703,9 +1688,6 @@ button:focus-visible {
         display: none;
     }
 }
-/* ==================================
-   ANIMATED STATISTICS
-================================== */
 
 .stats-grid {
     display: grid;
