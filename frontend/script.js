@@ -1,4 +1,3 @@
-// Profile information
 const PROFILE = {
     github: "Shyam-byt",
     linkedin: "YOUR_LINKEDIN_PROFILE_URL",
@@ -62,10 +61,6 @@ try {
 }
 
 loadGitHubStats();
-// =====================================
-// PREMIUM SCROLL REVEAL ANIMATION
-// =====================================
-
 document.addEventListener("DOMContentLoaded", () => {
  const elements = document.querySelectorAll(
     ".project-card, .section-label, section h2, " +
@@ -74,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 );
 
     elements.forEach((element) => {
-        // Avoid applying reveal twice
+    
         if (element.classList.contains("reveal")) {
             return;
         }
@@ -82,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
         element.classList.add("reveal");
     });
 
-    // Reveal elements as they enter the screen
+   
     if ("IntersectionObserver" in window) {
         const observer = new IntersectionObserver(
             (entries, currentObserver) => {
@@ -103,15 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
             observer.observe(element);
         });
     } else {
-        // Fallback for older browsers
+        
         document.querySelectorAll(".reveal").forEach((element) => {
             element.classList.add("visible");
         });
     }
 });
-// ==================================
-// EMAILJS CONTACT FORM
-// ==================================
 
 emailjs.init({
     publicKey: "k6dxVvOcljJZXNMX0"
@@ -163,9 +155,6 @@ if (contactForm) {
         }
     });
 }
-// ==================================
-// ANIMATED TYPING EFFECT
-// ==================================
 
 const typingElement = document.getElementById("typing-text");
 
@@ -215,9 +204,7 @@ if (typingElement) {
 
     setTimeout(typeEffect, 1400);
 }
-// ==================================
-// PREMIUM MOUSE GLOW EFFECT
-// ==================================
+
 
 const mouseGlow = document.createElement("div");
 
@@ -231,9 +218,6 @@ document.addEventListener("mousemove", function (event) {
     mouseGlow.style.top = event.clientY + "px";
 });
 
-// ==================================
-// ANIMATED STATISTICS
-// ==================================
 
 const statNumbers = document.querySelectorAll(".stat-number");
 
@@ -271,8 +255,6 @@ if (statNumbers.length > 0) {
 
     statNumbers.forEach(counter => statsObserver.observe(counter));
 }
-// Connect Frontend to FastAPI Backend
-
 async function loadProfileFromBackend() {
     try {
         const response = await fetch(
